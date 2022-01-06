@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/info.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="../js/info.js">
+  </script>
+</head>
+<body>
+  <!--header#header>h3(>a[href=#])+ul.depth1>li(>a[href=#]{MENU$}+div.ab_box>ul.depth2>li(>a[href=#]{SubMenu-$})*4)*4-->
+<header id="header">
+  <h3><a href="#">로고</a></h3>
+  <ul class="depth1">
+    <li>
+      <a href="#">MENU1</a>
+      <div class="ab_box">
+        <ul class="depth2">
+          <li><a href="#">SubMenu-1</a></li>
+          <li><a href="#">SubMenu-2</a></li>
+          <li><a href="#">SubMenu-3</a></li>
+          <li><a href="#">SubMenu-4</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">MENU2</a>
+      <div class="ab_box">
+        <ul class="depth2">
+          <li><a href="#">SubMenu-1</a></li>
+          <li><a href="#">SubMenu-2</a></li>
+          <li><a href="#">SubMenu-3</a></li>
+          <li><a href="#">SubMenu-4</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">MENU3</a>
+      <div class="ab_box">
+        <ul class="depth2">
+          <li><a href="#">SubMenu-1</a></li>
+          <li><a href="#">SubMenu-2</a></li>
+          <li><a href="#">SubMenu-3</a></li>
+          <li><a href="#">SubMenu-4</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="#">MENU4</a>
+      <div class="ab_box">
+        <ul class="depth2">
+          <li><a href="#">SubMenu-1</a></li>
+          <li><a href="#">SubMenu-2</a></li>
+          <li><a href="#">SubMenu-3</a></li>
+          <li><a href="#">SubMenu-4</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <div class="ab_box_twin"></div>
+</header>
+<section>
+  <section id="section1">
+    <div>
+      <ul>
+        <li class="bg_01"><a href="#"></a></li>
+        <li class="bg_02"><a href="#"></a></li>
+        <li class="bg_03"><a href="#"></a></li>
+        <li class="bg_04"><a href="#"></a></li>
+        <li class="bg_05"><a href="#"></a></li>
+      </ul>
+    </div>
+  </section>
+  <!--section#section2>div.wrap>div.tabbox>ul(>li(>input+label+div.textbox(>p))*2)+div.imgbox(>ul>li(>a[href=#](>img)+span)*3)+div.bnbox-->
+  <section id="section2">
+    <div class="wrap">
+        <div class="tabbox">
+        <ul>
+          <li>
+            <input checked type="radio" name="tabbox" id="notice">
+            <label for="notice">공지사항</label>
+            <div class="textbox">
+              <p>
+                얼음낚시겨울의 묘미, 평창의 묘미! <br>겨울낚시의 대표 얼음 낚시. <br>
+                얼음을 깨고 송어를 낚는 재미! 낚은 송어를 즉석에서<br>
+                요리도 가능하니 재미 두배! 송어양식을 최초로 ..
+              </p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="tabbox" id="gellary">
+            <label for="gellary">갤러리</label>
+            <div class="textbox">
+              <ul>
+              <li><a href="#"><img src="../img/review_1.png" alt="이미지"></a></li>
+              <li><a href="#"><img src="../img/review_1.png" alt="이미지"></a></li>
+              <li><a href="#"><img src="../img/review_1.png" alt="이미지"></a></li>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="imgbox">
+        <ul>
+          <li>
+            <a href="#"><img src="../img/review_2.png" alt="사람이 헬멧을 쓴 사진"></a>
+            <span>사람1</span>
+          </li>
+          <li>
+            <a href="#"><img src="../img/review_2.png" alt="사람이 헬멧을 쓴 사진"></a>
+            <span>사람2</span>
+          </li>
+          <li>
+            <a href="#"><img src="../img/review_2.png" alt="사람이 헬멧을 쓴 사진"></a>
+            <span>사람3</span>
+          </li>
+        </ul>
+      </div>
+      <div class="bnbox">
+        <div class="bnbox_bg"></div>
+        <button type="button" name="button_1" id="button_1">클릭</button>
+        <div class="popup">
+          <span>타이틀</span>
+          <p>than a moment, than a moment, love<br>
+(Ooh ah ooh ah ooh ah ooh ah ah)<br>love is nothing stronger<br>
+(Ooh ah ooh ah ooh ah ooh ah ooh)<br>(than a boy with)<br>than a boy with love</p>
+          <button type="button" name="button"><span>x</span> 닫기</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<!--footer#footer>ul.menu(>li(>a[href=#]{하단메뉴$})*4)+ul.sns(>li(>a[href=#](>img))*3)+div.family>input+label+div.ab_box(>ul>li(>a[href=#]{패밀리$})*5)-->
+<footer id="footer">
+  <div class="footer_left">
+  <ul class="menu">
+    <li><a href="#">사업자등록정보</a></li>
+    <li><a href="#">개인정보이용방침</a></li>
+    <li><a href="#">치킨</a></li>
+    <li><a href="#">피자</a></li>
+  </ul>
+  <p>회사명 :로고<br>
+대표자 김닭발 개인정보관리책임자 오돌뼈<br>사업자등록번호 787-86-00775 [사업자정보확인]<br>통신판매업신고번호 제 2018-서울용산-0305<br> opyright(c) 2021 All rights reserved.
+</p>
+  </div>
+  <div class="footer_right">
+    <ul class="sns">
+      <li><a href="#"><img src="../img/sns_blog.png" alt="네이버블로그"></a></li>
+      <li><a href="#"><img src="../img/sns_instagram.png" alt="인스타그램"></a></li>
+      <li><a href="#"><img src="../img/sns_facebook.png" alt="페이스북"></a></li>
+    </ul>
+    <div class="family">
+      <input type="checkbox" id="family" name="family">
+      <label for="family">패밀리사이트</label>
+      <div class="ab_box">
+        <ul>
+          <li><a href="#">닭발</a></li>
+          <li><a href="#">소주</a></li>
+          <li><a href="#">오돌뼈</a></li>
+          <li><a href="#">소맥</a></li>
+          <li><a href="#">청하</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+<style>
+*{margin: 0; padding: 0;}
+a{text-decoration: none; display: block;}
+ol, ul, dl{list-style: none;}
+
+#header{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #04D9B2;
+  height: 100px;
+  position: relative;
+  }
+#header:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+#header .ab_box_twin{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #D9985F;
+  height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+  width: 100%;
+}
+#header h3{
+  float: left;
+}
+#header h3 a{
+  background-color: #F24171;
+  color: #04d9b2;
+  font-size: 20px;
+  line-height: 100px;
+  width: 150px;
+  text-align: center;
+}
+#header .depth1{
+  float: right;
+  width: 600px;
+  margin-top: 50px;
+  margin: 60px 15px 0 0;
+}
+#header .depth1 > li{
+  float: left;
+  width: 25%;
+  position: relative;
+}
+#header .depth1 > li > a{
+  background-color: #F24171;
+  color: #04d9b2;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+#header .depth1:hover .ab_box {
+  height: 154px;
+  z-index: 2;
+}
+#header .depth1:hover + .ab_box_twin{
+  height: 150px;
+  z-index: 1;
+}
+#header .depth1 > li:hover > a{
+  background-color: #ef0b49;
+  color: #ffc3d3;
+}
+#header .depth2 li:hover a{
+  background-color: #D9734E;
+  color: #84ffe8;
+}
+#header .ab_box{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 100%;
+  transition: 0.5s;
+  overflow: hidden;
+  height: 0;
+}
+
+#header .depth2{}
+#header .depth2 li{
+  display: block;
+}
+#header .depth2 li a{
+  background-color: #D9985F;
+  color: #F24171;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+/*section영역**/
+section{
+  width: 1200px;
+  margin: 0 auto;
+}
+#section1{
+  min-height: 300px;
+}
+#section1 div{
+  width: 1200px;
+  position: relative;
+}
+#section1 div ul{}
+#section1 div ul li{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 300px;
+  display: none;
+}
+#section1 div ul .bg_01{
+  background-color: #F24171;
+}
+#section1 div ul .bg_02{
+  background-color: #04D9B2;
+}
+#section1 div ul .bg_03{
+  background-color: #03A678;
+}
+#section1 div ul .bg_04{
+  background-color: #D9985F;
+}
+#section1 div ul .bg_05{
+  background-color: #db5c2e;
+}
+
+#section2{
+  width: 1200px;
+  margin: 0 auto;
+  min-width: 200px;
+}
+#section2 .wrap{}
+
+#section2:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+#section2 .wrap .tabbox{
+  width: 33.33%;
+  float: left;
+  background-color: #d5fff1;
+  height: 200px;
+}
+#section2 .tabbox ul{
+  margin: 10px 0 10px 35px;
+}
+#section2 .tabbox ul li{
+  float: left;
+  width: 100px;
+  position: relative;
+}
+
+#section2 .tabbox ul li input{
+  display: none;
+}
+#section2 .tabbox ul li label{
+  display: block;
+  background-color: #F24171;
+  color: #04D9B2;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  border: solid 3px #ffb6b6;
+  width: 100px;
+}
+#section2 .tabbox ul li .textbox{
+  width: 330px;
+  background-color: #f0bed8;
+  height: 120px;
+  border: solid 5px #fff;
+}
+#section2 .tabbox ul li .textbox p{
+  color: #fff;
+  line-height: 27px;
+  text-align: center;
+  font-size: 13px;
+}
+#section2 .tabbox ul li .textbox ul li a{
+  width: 80px;
+  height: 80px;
+  margin: 20px 10px 0 25px;
+  display: inline-block;
+}
+#section2 .tabbox ul li .textbox ul li a img{
+  width: 100%;
+}
+#section2 .tabbox .textbox ul {
+    margin: 0;
+}
+#section2 .tabbox ul li .textbox li:hover a{
+  opacity: 0.8;
+}
+#section2 .tabbox ul li input:checked + label {
+  color: #F24171;
+  background-color: #04D9B2;
+}
+#section2 .tabbox ul li + li .textbox{
+  display: none;
+}
+#section2 .tabbox ul li input:checked + label + div {
+  z-index: 3;
+}
+#section2 .tabbox ul li + li input:checked + label + div {
+    display: block;
+    position: absolute;
+    left: -100%;
+    height: 120px;
+  }
+#section2 .imgbox{
+  width: 33.33%;
+  float: left;
+  background-color: #8c4ff8;
+  height: 200px;
+}
+#section2 .imgbox ul{
+  width: 100%;
+  margin: 30px 0 0 35px;
+}
+#section2 .imgbox ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+#section2 .imgbox ul li{
+  width: 29%;
+  float: left;
+  margin-left: 5px;
+}
+#section2 .imgbox ul:first-child li {
+    margin: 0;
+}
+#section2 .imgbox ul li a{
+  width: 100px;
+display: inline-block;
+}
+#section2 .imgbox ul li span{
+  text-align: center;
+  color: #c46072;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  width: 100px;
+  display: block;
+  margin-top: 10px;
+}
+#section2 .imgbox ul li a img{
+  width: 100%;
+}
+#section2 .imgbox ul li:hover a{
+  opacity: 0.5;
+}
+#section2 .imgbox ul li:hover span{
+  background-color: #c46072;
+  color: #fff;
+}
+
+#section2 .wrap .bnbox{
+  width: 33.33%;
+  float: left;
+  height: 200px;
+  background-color: #7fffff;
+      position: relative;
+}
+#section2 .wrap #button_1{
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  left: 35%;
+  top: 45%;
+}
+
+#section2 .wrap .bnbox .bnbox_bg{
+  background-image: url(../img/review_3.png);
+  height: 150px;
+  width: 300px;
+  margin: 25px 30px 20px 50px;
+  cursor: pointer;
+}
+#section2 .wrap .bnbox .popup{
+  position: fixed;
+  left: 35%;
+  top: 35%;
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+}
+#section2 .wrap .bnbox .popup span{
+  display: block;
+  font-size: 20px;
+  background-color: beige;
+  color: #a104b8;
+}
+#section2 .wrap .bnbox .popup span + p{
+  display: block;
+  background-color: white;
+  color: #fc6c54;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 0;
+}
+
+#section2 .wrap .bnbox .popup span + p + button{
+  width: 50px;
+  height: 20px;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 13px;
+  vertical-align: middle;
+  color: cadetblue;
+  background-color: #d5a5a5;
+  border: none;
+  margin-left: 340px;
+  cursor: pointer;
+
+}
+
+#section2 .wrap .bnbox .popup button span {
+    font-size: 13px;
+    vertical-align: middle;
+    color: #468a8c;
+    display: inline-block;
+    line-height: 13px;
+    background-color: #d5a5a5;
+}
+
+#footer{
+  width: 1200px;
+  height: 100px;
+  background-color: #04d9b2;
+margin: 0 auto;
+}
+#footer::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer .footer_left{
+  float: left;
+  width: 1000px;
+}
+#footer .footer_left .menu{
+  display: block;
+}
+#footer .footer_left p{
+  font-size: 13px;
+  text-align: center;
+  line-height: 13px;
+  color: #fff;
+  display: block;
+}
+#footer .footer_left .menu li{
+  float: left;
+  width: 25%;
+}
+#footer .footer_left .menu li:hover a{
+  color: #94fed1;
+  background-color: #1d6d52;
+}
+#footer .footer_left .menu li a{
+  background-color: #94fed1;
+  color: #1d6d52;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+
+#footer .footer_right{
+  float: right;
+  width: 200px;
+}
+#footer .sns{display: block;}
+#footer .sns li{
+  float: left;
+  width: 33.33%;
+  background-color: beige;
+}
+#footer .sns li a{
+  width: 40px;
+  margin: 5px 5px 5px 13px;
+}
+#footer .sns li a img{
+  display: block;
+  width: 100%;
+}
+#footer .sns li:hover a{
+  opacity: 0.8;
+}
+
+#footer .family{
+  display: block;
+  width: 200px;
+  position: relative;
+}
+#footer .family input{
+  display: none;
+}
+#footer .family label{
+  display: block;
+  text-align: center;
+  background-color: #1e7171;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  color: #fff;
+  line-height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+#footer .family input:checked + label + .ab_box{
+  height: 177px;
+
+}
+#footer .family .ab_box{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 100%;
+  height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+
+}
+#footer .family .ab_box ul{}
+#footer .family .ab_box ul li:hover a{
+  color: #1e7171;
+  background-color: #fff;
+}
+#footer .family .ab_box ul li a{
+  display: block;
+  background-color: #1e7171;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  border-bottom: solid 1px #ccc;
+  line-height: 35px;
+
+}
+
+</style>
+<script>
+$(document).ready(function(){
+  $('#section2 .wrap .bnbox .popup').hide();
+
+    $('#section2 .wrap .bnbox #button_1').click(function(){
+      $('#section2 .wrap .bnbox .popup').show();
+    });
+      $('#section2 .wrap .bnbox .popup span + p + button').click(function(){
+        $('#section2 .wrap .bnbox .popup').hide();
+      });
+
+
+
+  var count = 0;
+
+  $('#section1 div ul li').eq(count).fadeIn(2000);
+
+  setInterval(function(){
+
+  count++;
+  count = count%5;
+  $('#section1 div ul li').eq(count).fadeIn(2000).siblings().fadeOut(2000);
+
+  }, 2000);
+
+});
+
+</script>
+</html>

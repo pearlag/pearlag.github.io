@@ -1,0 +1,218 @@
+<?php include_once('.../layout/header.html'); ?>
+<section id="goods_header">
+    <div class="sub_visual">
+      <div class="sub_vis">
+        <img src="/img/sub_product_bg.png" alt="가방에서 헬멧을 꺼내는 손">
+      </div>
+      <div class="sub_txt">
+        <div class="inner">
+          <div class="line_wrap">
+              <i class="line01"></i>
+              <i class="line02"></i>
+              <i class="line03"></i>
+              <i class="line04"></i>
+          </div>
+          <strong>PRODUCT</strong>
+        </div>
+      </div>
+      <div class="sub_paging">
+        <div class="inner">
+          <div class="sub_location">
+            <div class="home"><a href="/"></a></div>
+            <div class="depth depth_1">
+              <ul>
+                <li>
+                  <button class="depth_title">PRODUCT</button>
+                  <ul id="sub_ul_goods_01" class="sub_ul" style="display: none; height: 185px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                    <li><a href="/aboutus/brandstory.html">ABOUT US</a></li>
+                    <li><a href="/product/best.html">PRODUCT</a></li>
+                    <li><a href="/event/event_ing.html">EVENT</a></li>
+                    <li><a href="/community/notice.html">COMMUNITY</a></li>
+                    <li><a href="/mypage/wish.html">MYPAGE</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="depth depth_2">
+              <ul>
+                <li>
+                  <button class="depth_title">베스트 상품</button>
+                  <ul id="sub_ul_goods_02" class="sub_ul" style="display: none; height: 185px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                    <li><a href="/product/promotion.html">기획전</a></li>
+                    <li><a href="/product/best.html">베스트 상품</a></li>
+                    <li><a href="/product/foldable_helmet.html">접이식 헬멧</a></li>
+                    <li><a href="/product/safe_product.html">안전용품</a></li>
+                    <li><a href="/product/set_product.html">세트상품</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<section class="goods_info">
+  <div class="goods_info_head">
+    <div class="head_thumbnail">
+      <div class="thumb_img"><img src="/img/helmet_carollne.png" alt="캐롤린 헬멧"></div>
+    </div>
+    <div class="head_goodsinfo">
+      <form name="form" method="get">
+        <h3><a href="#">캐롤린 헬멧</a></h3>
+        <span class="helmet_price">89,000</span>
+        <dl class="count_info">
+          <dt class="info_title">적립금</dt><dd class="info_con">150원(1%) + 멤버십(3~10%)</dd>
+          <dt class="info_title">배송비</dt><dd class="info_con">2500원 (50,000원 이상 배송비 무료)</dd>
+          <dt class="info_title">수령 예상일</dt><dd class="info_con">지금 택배로 주문하면 2021년 1월 5일 출고</dd>
+        </dl>
+        <dl class="review_info">
+          <dt class="info_title">평점</dt>
+          <dd class="info_con">
+            <i class="xi-star"></i>
+            <i class="xi-star"></i>
+            <i class="xi-star"></i>
+            <i class="xi-star"></i>
+            <i class="xi-star-o"></i>
+            4.9
+          </dd>
+          <dt class="info_title">주문 수</dt><dd class="info_con">384</dd>
+          <dt class="info_title">리뷰 수</dt><dd class="info_con">1</dd>
+        </dl>
+        <p class="order">
+          <span class="amount">사이즈</span>
+            <select name="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+            <span>나의 사이즈 알아보기</span>
+          <br>
+        </p>
+        <p class="order">
+          <span class="amount">상품수량 </span>
+          <input type="button" id="minusBtn" value=" - " onclick="del();">
+          <input id="goodsCount" type="text" name="amount" value="1" size="3" onchange="change();">
+          <input type="button" id="plusBtn" value=" + " onclick="add();"><br>
+        </p>
+        <p class="order">
+          <span>총 상품금액</span>
+          <input id="countResult" type="text" name="sum" size="11" readonly=""><span> 원</span>
+        </p>
+        <span class="button">
+          <a href="#none" class="stack_cart">장바구니</a>
+          <a href="#none" class="perchase">구매하기</a>
+        </span>
+      </form>
+    </div>
+
+    <div class="goods_detail">
+      <dl>
+        <dt class="detail_title">기본정보</dt>
+        <dd class="detail_con">
+          <p class="vinyl">
+            GOODVINYL5007(Cat.No) <span class="space"></span> Disc : 1장 <span class="space"></span> 110g
+          </p>
+          <p class="category">주제분류</p>
+          <ul class="goods_category">
+            <li><a href="/sub/goods_lp2.html">LP</a> &gt; <a href="#none">O.S.T</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="detail_title">음반 소개</dt>
+        <dd class="detail_con">
+          <p>
+            <!--상품 정보-->
+          </p>
+          <
+        </dd>
+      </dl>
+      <dl>
+        <dt class="detail_title">아티스트 소개</dt>
+        <dd class="detail_con">
+          <p class="artist_name">엔니오 모리코네 (Ennio Morricone) <span>(작곡가)</span> </p>
+          <p class="artist_info">영화음악의 전설이자 가장 선구적인 이탈리아 작곡가. 로마 콘세르바토리오에서 트롬본과 작곡을 전공했다.
+            투철한 실험 정신으로 다양한 음악적 표현을 창출해냈으며 현대음악 분야는 물론 특히 실용음악 분야에서 두각을 나타냈다.
+            오케스트라 편곡자로 출발해 지휘자로 활동했으며 후에 연극, 라디오, 텔레비전 그리고 영화 음악 작곡가로 성장한 그는 1961년
+            루치아노 샐스 감독의 "파시스트"를 통해 영화음악가로 데뷔했다.
+            쥬세페 토르나토레 감독의 대표적인 작품 "시네마 천국"에서의 인연을 시작으로 "스타 메이커", "말레나", "피아니스트의 전설",
+            "언노운 우먼" 등 오랜 시간 완벽한 호흡을 선보이며 최고의 콤비로 활동했다.
+             그밖에도 로만 폴란스키, 브라이언 드 팔마, 존 카펜터 등 다른 거장 감독들과 함께 작업하며 화려한 경력을 쌓아온 그는 영국아카데미와
+              골든글로브 모두 4회씩 수상하는 등 수많은 영화제에서 음악상을 수상하며 명실공히 영화음악의 대가로 자리매김했다.
+              450편이 넘는 영화의 오리지널 사운드트랙을 작곡했으며 2007년에 아카데미 공로상을 수상했다.
+               2020년 7월 향년 91세를 일기로 세상을 떠났다. </p>
+        </dd>
+      </dl>
+      <dl>
+        <dt class="detail_title">리뷰</dt>
+        <dd class="detail_con">
+          <span class="review_thumb"><img src="/img/main/lp_review.png" alt="리뷰 미리보기"></span>
+          <div class="ab_review">
+            <div class="rv_left">
+              <div class="rv_goods">
+                <a href="#none" class="rv_thumb"><img src="/img/goods/lp/ost_1.jpg" alt="시네마 천국 영화음악 [180G 블루 LP] [한정반]"></a>
+                <div class="rv_goods_name">
+                  <a href="#none">시네마 천국 영화음악 [180G 블루 LP] [한정반]</a>
+                  <span>15,000원</span>
+                  <div class="rv_info">
+                    <dl>
+                      <dt>리뷰 수</dt>
+                      <dd>1</dd>
+                    </dl>
+                    <dl>
+                      <dt>평점</dt>
+                      <dd>7.8</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="review_contents">
+                <span class="reviewer_img">
+                  <img src="/img/main/lp_review.png" alt="리뷰3">
+                </span>
+                <p class="ab_review_title">짱!</p>
+                <p class="ab_review_con">
+                  <span>노래 너무좋아요 유명한덴 이유가있네여ㅜㅜㅜ</span>
+                  <span>블루반 색이 미쳤어요 맹한 파랑아니고 ㄹㅇ 로얄블루! 큰 엘피만 보다가 보니까 작고 귀엽네용</span>
+                  <span>인기 많은 LP인거 알구 사람들 너무 많이 빌리는거라 기대 안했는데 상태 완전 새거인줄..</span>
+                  <span>너무 예쁘고 퀄 너무 좋아요 소장용으로 구매하고 싶을 정도.. 리뷰잘안쓰는디 굳이굳이 쓰러옴</span>
+                </p>
+              </div>
+            </div>
+            <div class="rv_right">
+              <span class="xi-close ab_review_closeBtn"></span>
+              <div class="reviewer_info">
+                <h4><strong>jihyun_93</strong>님의 리뷰</h4>
+                <p class="star">
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                  <i class="xi-star"></i>
+                </p>
+                <div class="rv_info">
+                  <dl>
+                    <dt>리뷰 조회수</dt>
+                    <dd>296</dd>
+                  </dl>
+                  <dl>
+                    <dt>이 리뷰가 좋아요</dt>
+                    <dd>15</dd>
+                  </dl>
+                  <dl>
+                    <dt>리뷰 작성일</dt>
+                    <dd>2021.01.5 18:15:17</dd>
+                  </dl>
+                </div>
+                <h5 class="other_review">다른 상품 리뷰</h5>
+                <p class="other_review_info">아직 다른 상품 리뷰가 없습니다.</p>
+              </div>
+            </div>
+          </div>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</section>
+<?php include_once('.../layout/footer.html'); ?>

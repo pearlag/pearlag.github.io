@@ -1,0 +1,211 @@
+<?php include_once('../layout/header.html'); ?>
+<section id="coupon_header">
+    <div class="sub_visual">
+      <div class="sub_vis">
+        <img src="/img/sub_mypage.png" alt="가방에서 헬멧을 꺼내는 손">
+      </div>
+      <div class="sub_txt">
+        <div class="inner">
+          <div class="line_wrap">
+              <i class="line01"></i>
+              <i class="line02"></i>
+              <i class="line03"></i>
+              <i class="line04"></i>
+          </div>
+          <strong>MYPAGE</strong>
+        </div>
+      </div>
+      <div class="sub_paging">
+        <div class="inner">
+          <div class="sub_location">
+            <div class="home"><a href="/"></a></div>
+            <div class="depth depth_1">
+              <ul>
+                <li>
+                  <button class="depth_title">MYPAGE</button>
+                  <ul id="sub_ul_coupon" class="sub_ul" style="display: none; height: 185px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                    <li><a href="/aboutus/brandstory.html">ABOUT US</a></li>
+                    <li><a href="/product/best.html">PRODUCT</a></li>
+                    <li><a href="/event/event_ing.html">EVENT</a></li>
+                    <li><a href="/community/notice.html">COMMUNITY</a></li>
+                    <li><a href="/mypage/wish.html">MYPAGE</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="depth depth_2">
+              <ul>
+                <li>
+                  <button class="depth_title">쿠폰/적립금</button>
+                  <ul id="sub_ul_coupon_02" class="sub_ul" style="display: none; height: 185px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                    <li><a href="/join/join.html">회원정보</a></li>
+                    <li><a href="/mypage/wish.html">관심상품</a></li>
+                    <li><a href="/mypage/order_history.html">주문조회</a></li>
+                    <li><a href="/mypage/coupon.html">쿠폰/적립금</a></li>
+                    <li><a href="/mypage/cart.html">장바구니</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<section id="mypage_coupon_section">
+  <div class="mypage_coupon_subject">
+    <h2><a href="#none">쿠폰/적립금</a></h2>
+  </div>
+  <div id="mypage_coupon_contents">
+    <ul class="tabbox">
+      <li>
+        <input checked type="radio" name="mypage_coupon_tab" id="coupon">
+        <label for="coupon">쿠폰</label>
+        <div class="mypage_coupon_contents_ab_box">
+          <h3>나의 쿠폰 목록</h3><span>(사용가능 쿠폰 : 0장)</span>
+          <table class="mypage_coupon_table">
+            <caption>나의 쿠폰 목록</caption>
+            <colgruop>
+              <col style="width:130px">
+              <col style="width:auto">
+              <col style="width:140px">
+              <col style="width:130px">
+              <col style="width:130px">
+              <col style="width:130px">
+              <col style="width:140px">
+            </colgruop>
+            <thead>
+              <tr>
+                <th scope="col">번호</th>
+                <th scope="col">쿠폰명</th>
+                <th scope="col">쿠폰적용 상품</th>
+                <th scope="col">구매금액</th>
+                <th scope="col">결제수단</th>
+                <th scope="col">쿠폰 혜택</th>
+                <th scope="col">사용가능 기간</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="1" class="message">1</td>
+                <td colspan="1" class="message">[리뷰이벤트]5,000원 할인쿠폰</td>
+                <td colspan="1" class="message"></td>
+                <td colspan="1" class="message"></td>
+                <td colspan="1" class="message"></td>
+                <td colspan="1" class="message"></td>
+                <td colspan="1" class="message">2020.12.23~<br>2020.1.23</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="mypage_order_history_page">
+            <a href="#none">
+              <span class="xi-angle-left-thin"></span>
+              <span class="xi-angle-left-thin"></span>
+            </a>
+
+            <a href="#none">
+              <span class="xi-angle-left-thin"></span>
+            </a>
+            <ol>
+              <li><a href="#none">1</a></li>
+            </ol>
+            <a href="#none">
+              <span class="xi-angle-right-thin"></span>
+            </a>
+            <a href="#none">
+              <span class="xi-angle-right-thin"></span>
+              <span class="xi-angle-right-thin"></span>
+            </a>
+          </div>
+          <div class="coupon_code">
+            <h4>쿠폰번호 등록하기</h4>
+            <fieldset>
+              <legend>쿠폰번호 등록</legend>
+              <input type="text" name="coupon_code" maxlength="35">
+              <button>쿠폰번호인증</button>
+              <span>반드시 쇼핑몰에서 발행한 쿠폰번호만 입력해주세요. (10~35자 일련번호 "-" 제외)</span>
+            </fieldset>
+            <div class="coupon_help">
+              <ol>
+                <li>쿠폰인증번호 등록하기에서 쇼핑몰에서 발행한 종이쿠폰/시리얼쿠폰/모바일쿠폰 등의 인증번호를 등록하시면 온라인쿠폰으로 발급되어 사용이 가능합니다.</li>
+                <li>쿠폰은 주문 시 1회에 한해 적용되며, 1회 사용 시 재 사용이 불가능합니다.</li>
+                <li>쿠폰은 적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.</li>
+                <li>특정한 종이쿠폰/시리얼쿠폰/모바일쿠폰의 경우 단 1회만 사용이 가능할 수 있습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+      </li>
+
+      <li>
+        <input type="radio" name="mypage_coupon_tab" id="cash">
+        <label for="cash">적립금</label>
+        <div class="mypage_coupon_contents_ab_box">
+          <div id="mypage_cash_contents2">
+            <div class="cash_info">
+              <ul class="cash_info_ul">
+                <li class="cash_info_li"><strong class="title">총 적립금</strong><span class="data"><span>5,000원</span></span></li>
+                <li class="cash_info_li"><strong class="title">사용가능 적립금</strong><span class="data"><span>0원</span></span></li>
+                <li class="cash_info_li"><strong class="title">사용된 적립금</strong><span class="data"><span>0원</span></span></li>
+                <li class="cash_info_li"><strong class="title">미가용 적립금</strong><span class="data"><span>0원</span></span></li>
+                <li class="cash_info_li"><strong class="title">환불예정 적립금</strong><span class="data"><span>0원</span></span></li>
+              </ul>
+            </div>
+            <div class="cash_info_2">
+              <table class="mypage_cash_table">
+                <caption>적립금 내역</caption>
+                <colgruop>
+                  <col style="width:15%;">
+                  <col style="width:15%;">
+                  <col style="width:25%;">
+                  <col style="width:auto;">
+                </colgruop>
+                <thead>
+                  <tr>
+                    <th scope="col">주문날짜</th>
+                    <th scope="col">적립금</th>
+                    <th scope="col">관련주문</th>
+                    <th scope="col">내용</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="1" class="message">2020.11.30</td>
+                    <td colspan="1" class="message">5,000원</td>
+                    <td colspan="1" class="message">리콘 200 전조등 외 3개</td>
+                    <td colspan="1" class="message">50,000원 이상 주문고객 10% 적립 이벤트</td>
+                  </tr>
+              </table>
+              <div class="mypage_order_history_page">
+                <a href="#none">
+                  <span class="xi-angle-left-thin"></span>
+                  <span class="xi-angle-left-thin"></span>
+                </a>
+
+                <a href="#none">
+                  <span class="xi-angle-left-thin"></span>
+                </a>
+                <ol>
+                  <li><a href="#none">1</a></li>
+                </ol>
+                <a href="#none">
+                  <span class="xi-angle-right-thin"></span>
+                </a>
+                <a href="#none">
+                  <span class="xi-angle-right-thin"></span>
+                  <span class="xi-angle-right-thin"></span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+</section>
+<?php include_once('../layout/footer.html'); ?>
