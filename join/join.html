@@ -1,0 +1,159 @@
+<?php include_once('../layout/header.html'); ?>
+<section id="join_header">
+    <div class="sub_visual">
+      <div class="sub_vis">
+        <img src="/img/sub_mypage.png" alt="가방에서 헬멧을 꺼내는 손">
+      </div>
+      <div class="sub_txt">
+        <div class="inner">
+          <div class="line_wrap">
+              <i class="line01"></i>
+              <i class="line02"></i>
+              <i class="line03"></i>
+              <i class="line04"></i>
+          </div>
+          <strong>MYPAGE</strong>
+        </div>
+      </div>
+      <div class="sub_paging">
+        <div class="inner">
+          <div class="sub_location">
+            <div class="home"><a href="/"></a></div>
+            <div class="depth depth_1">
+              <ul>
+                <li>
+                  <button class="depth_title">MYPAGE</button>
+                  <ul id="sub_ul_join" class="sub_ul" style="display: none; height: 185px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                    <li><a href="/aboutus/brandstory.html">ABOUT US</a></li>
+                    <li><a href="/product/best.html">PRODUCT</a></li>
+                    <li><a href="/event/event_ing.html">EVENT</a></li>
+                    <li><a href="/community/notice.html">COMMUNITY</a></li>
+                    <li><a href="/mypage/wish.html">MYPAGE</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="depth depth_2">
+              <ul>
+                <li>
+                  <button class="depth_title">회원정보</button>
+                  <ul id="sub_ul_join_02" class="sub_ul" style="display: none; height: 185px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                    <li><a href="/join/join.html">회원정보</a></li>
+                    <li><a href="/mypage/wish.html">관심상품</a></li>
+                    <li><a href="/mypage/order_history.html">주문/배송</a></li>
+                    <li><a href="/mypage/coupon.html">쿠폰/적립금</a></li>
+                    <li><a href="/mypage/cart.html">장바구니</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<div id="join_subject">
+  <h2><a href="#none">회원가입</a></h2>
+</div>
+<section id="join">
+  <div id="join_ot_a" class="join_others_account">
+    <ul class="join_ot_a_fieldset_ul">
+      <li><a href="https://www.strava.com/login" target="_blank"><img src="/img/login_strava.png" alt="#"></a></li>
+      <li><a href="https://accounts.google.com/" target="_blank"><img src="/img/login_google.png" alt="#"></a></li>
+      <li><a href="https://www.facebook.com/login" target="_blank"><img src="/img/login_facebook.png" alt="#"></a></li>
+      <li><a href="https://accounts.kakao.com/login" target="_blank"><img src="/img/login_kakao.png" alt="#"></a></li>
+      <li><a href="https://nid.naver.com/" target="_blank"><img src="/img/login_naver.png" alt="#"></a></li>
+    </ul>
+  </div>
+  <div class="join_form">
+    <form action="#">
+        <fieldset id="fieldset">
+          <p><span class="form_name">이메일 주소</span>
+          <input required autofocus type="text" name="e-mail" maxlength="20" id="join_email"></p>
+
+          <p><span class="form_name">비밀번호</span>
+          <input required type="text" name="pw" maxlength="10"
+          placeholder="영문 숫자 조합 8글자 이상" id="join_password"></p>
+
+          <p><span class="form_name">이름</span>
+          <input required type="text" name="name" maxlength="5" id="join_name"></p>
+
+          <p><span class="form_name">휴대전화</span>
+          <input required type="text" name="cellphone" maxlength="11"
+          placeholder="본인명의의 연락 가능한 번호" id="join_phonenumber"></p>
+
+          <p><span class="form_name">성별</span>
+          <input type="radio" name="gender" id="man">
+          <label for="man">남</label>
+          <input type="radio" name="gender" id="woman">
+          <label for="woman">여</label>
+          <input type="radio" name="gender" id="none" checked>
+          <label for="none">무성</label></p>
+
+          <p><span class="form_name">유저 선택</span>
+          <input checked type="checkbox" name="like" id="bike">
+          <label for="bike">자전거</label>
+          <input type="checkbox" name="like" id="e-bike">
+          <label for="e-bike">전기자전거</label>
+          <input type="checkbox" name="like" id="kickboard">
+          <label for="kickboard">전동킥보드</label></p>
+
+          <p><span class="form_name">라이딩을 하는 이유</span>
+          <input checked type="checkbox" name="why" id="gotowork">
+          <label for="gotowork">출퇴근</label>
+          <input type="checkbox" name="why" id="exercise">
+          <label for="exercise">운동</label>
+          <input type="checkbox" name="why" id="use">
+          <label for="use">이동수단</label></p>
+
+          <p><span class="form_name">주로 라이딩하는 지역</span>
+          <select name="city">
+            <optgroup label="서울시">
+              <option value="seocho-gu">서초구</option>
+              <option value="jung-gu">중구</option>
+              <option value="donggak-gu">동작구</option>
+            </optgroup>
+            <optgroup label="경기도">
+              <option value="siheung-si">시흥시</option>
+              <option value="Anyang-si">안양시</option>
+              <option value="gunpo-si">군포시</option>
+            </optgroup>
+            <optgroup label="인천시">
+              <option value="bupyeong-gu">부평구</option>
+              <option value="namdong-gu">남동구</option>
+              <option value="seo-gu">서구</option>
+            </optgroup>
+          </select>
+
+          <p><span class="form_name">자전거 등록</span>
+
+          <input id="file" type="file" name="file" value="file"></p>
+          <p><textarea id="join_text" rows="8" cols="80" placeholder="가입인사를 남겨주세요"></textarea></p>
+        </fieldset>
+        <div id="join_terms">
+          <ul>
+            <li>
+              <span>이용약관</span>
+              <div id="join_terms_txt_1"></div>
+              <input type="checkbox" id="join_agree_1">
+              <label for="join_agree_1">(필수)동의합니다.</label>
+            </li>
+            <li>
+              <span>개인정보 수집·이용에 대한 동의</span>
+              <div id="join_terms_txt_2"></div>
+              <input type="checkbox" id="join_agree_2">
+              <label for="join_agree_2">(필수)동의합니다.</label>
+            </li>
+            <li>
+              <span>마케팅정보 수신 동의</span>
+              <div id="join_terms_txt_3"></div>
+              <input type="checkbox" id="join_agree_3">
+              <label for="join_agree_3">(선택)동의합니다.</label>
+            </li>
+          </ul>
+        </div>
+        <p><input id="submit" type="submit" name="submit" value="가입하기"></p>
+      </form>
+    </div>
+</section>
+<?php include_once('../layout/footer.html'); ?>

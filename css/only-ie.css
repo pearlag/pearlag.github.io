@@ -1,0 +1,60 @@
+a{font-family : 'Noto Sans KR', sans-serif;}
+body{font-family : 'Noto Sans KR', sans-serif;}
+
+@font-face{
+   font-family:'Noto Sans KR','noto_sans.eot',sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   src:url('../font/noto_sans.eot');
+   src:url('../font/noto_sans.eot?#iefix') format('embedded-opentype');}
+
+#section1{
+  min-height: 100vh;
+}
+
+
+#section1 #play_video{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#section1 #play_video video{
+  position: relative;
+  object-fit: cover;
+  object-position: 50% 20%;
+  width: 100vw;
+  height: auto;
+  pointer-events: none;
+  display: inline-block;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+#notice_header .sub_visual .sub_paging::before{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  height: 101%;
+  width: 360px;
+  background-color: #fb7f00;
+}
+
+#play_video .main_textbox p a{
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#section_06 .main_con05 .cerf .main_event div .ab_box .bar_text{
+  font-family: "Noto Sans KR", sans-serif;
+
+}
+
+#section_07 .detail{
+  font-family: "Noto Sans KR", sans-serif;
+
+}

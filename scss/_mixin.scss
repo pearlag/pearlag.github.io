@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@mixin float{
+  content: "";
+  display: block;
+  clear: both;
+}
+@mixin img{
+  width: 100%;
+display: block;
+}

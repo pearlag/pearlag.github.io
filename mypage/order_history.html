@@ -1,0 +1,229 @@
+<?php include_once('../layout/header.html'); ?>
+<section id="order_history_header">
+    <div class="sub_visual">
+      <div class="sub_vis">
+        <img src="/img/sub_mypage.png" alt="가방에서 헬멧을 꺼내는 손">
+      </div>
+      <div class="sub_txt">
+        <div class="inner">
+          <div class="line_wrap">
+              <i class="line01"></i>
+              <i class="line02"></i>
+              <i class="line03"></i>
+              <i class="line04"></i>
+          </div>
+          <strong>MYPAGE</strong>
+        </div>
+      </div>
+      <div class="sub_paging">
+        <div class="inner">
+          <div class="sub_location">
+            <div class="home"><a href="/"></a></div>
+            <div class="depth depth_1">
+              <ul>
+                <li>
+                  <button class="depth_title">MYPAGE</button>
+                  <ul id="sub_ul_oh" class="sub_ul" style="display: none; height: 185px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                    <li><a href="/aboutus/brandstory.html">ABOUT US</a></li>
+                    <li><a href="/product/best.html">PRODUCT</a></li>
+                    <li><a href="/event/event_ing.html">EVENT</a></li>
+                    <li><a href="/community/notice.html">COMMUNITY</a></li>
+                    <li><a href="/mypage/wish.html">MYPAGE</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="depth depth_2">
+              <ul>
+                <li>
+                  <button class="depth_title">주문조회</button>
+                  <ul id="sub_ul_oh_02" class="sub_ul" style="display: none; height: 185px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                    <li><a href="/join/join.html">회원정보</a></li>
+                    <li><a href="/mypage/wish.html">관심상품</a></li>
+                    <li><a href="/mypage/order_history.html">주문조회</a></li>
+                    <li><a href="/mypage/coupon.html">쿠폰/적립금</a></li>
+                    <li><a href="/mypage/cart.html">장바구니</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<section id="mypage_order_history_section">
+  <div class="mypage_order_history_subject">
+    <h2><a href="#none">주문조회</a></h2>
+  </div>
+<!--div.mypage_order_history_contents>ul.tabbox>li(>input+label+div.contents>fieldset(>div.state_select(>select>option*8)+span.period(>a[href=#])*5+input#history_start_date+button+input#history_end_date+button+input#order_search_btn))*2+p(>span*4)-->
+<div id="mypage_order_history_contents">
+  <ul class="tabbox">
+    <li>
+      <input checked type="radio" name="mypage_order_history_tab" id="order_inquiry">
+      <label for="order_inquiry">주문내역조회</label>
+      <div class="mypage_order_history_contents_ab_box">
+        <fieldset>
+          <div class="state_select">
+            <select name="order_status" id="order_status" class="fSelect">
+              <option value="all">전체 주문처리상태</option>
+              <option value="shipped_before">입금전</option>
+              <option value="shipped_standby">배송준비중</option>
+              <option value="shipped_begin">배송중</option>
+              <option value="shipped_complate">배송완료</option>
+              <option value="order_cancel">취소</option>
+              <option value="order_exchange">교환</option>
+              <option value="order_return">반품</option>
+            </select>
+          </div>
+          <span class="period">
+            <a href="#none">오늘</a><a href="#none">1주일</a><a href="#none">1개월</a><a href="#none">3개월</a><a href="#none">6개월</a>
+          </span>
+          <input type="date" id="history_start_date" value="2020-09-16">
+          <span>~</span>
+          <input type="date" id="history_end_date" value="2020-12-15">
+          <button type="button" name="button">조회</button>
+          <table class="mypage_order_history_table_0">
+            <colgroup>
+              <col width="*">
+              <col width="80px">
+              <col width="100px">
+              <col width="100px">
+              <col width="100px">
+              <col width="100px">
+            </colgroup>
+            <thead class="wish_thead">
+              <tr>
+                <th scope="col">상품명/옵션</th>
+                <th scope="col">주문수량</th>
+                <th scope="col">상품금액</th>
+                <th scope="col">할인금액</th>
+                <th scope="col">결제금액</th>
+                <th scope="col">주문상태</th>
+              </tr>
+            </thead>
+            <tbody class="wish_tbody">
+              <tr>
+                <td class="wish_thumb"><strong><a href="#none">노르디카 헬멧</a></strong><a href="#none"><img src="/img/helmet_nordica.png" alt="펜드 헬멧"></a></td>
+                <td class="wish_left"><span>1</span></td>
+                <td><span>28,000</span></td>
+                <td><div>2,000</div></td>
+                <td>26,000</td>
+                <td class="wish_price"><strong>구매확정</strong></td>
+              </tr>
+              <tr>
+                <td class="wish_thumb"><strong><a href="#none">리콘 200 전조등/후미등 세트</a></strong><a href="#none"><img src="/img/lightset_recon200.png" alt="리콘 200 전조등,후미등 세트"></a></td>
+                <td class="wish_left">
+                  <span>1</span>
+                </td>
+                <td><span>85,000</span></td>
+                <td><div>0</div></td>
+                <td>85,000</td>
+                <td class="wish_price"><strong>구매확정</strong></td>
+              </tr>
+              <tr>
+                <td class="wish_thumb"><strong><a href="#none">니니 헬멧</a></strong><a href="#none"><img src="/img/helmet_nini.png" alt="니니 헬멧"></a></td>
+                <td class="wish_left">
+                  <span>1</span>
+                </td>
+                <td><span>78,900</span></td>
+                <td><div>5,000</div></td>
+                <td>73,900</td>
+                <td class="wish_price"><strong>구매확정</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <p class="order_notice">
+          <span>기본적으로 최근 3개월간의 자료가 조회되며, 기간 검색시 지난 주문내역을 조회하실 수 있습니다.</span>
+          <span>기본적으로 최근 3개월간의 자료가 조회되며, 기간 검색시 주문처리완료 후 36개월 이내의 주문내역을 조회하실 수 있습니다.</span>
+          <span>주문번호를 클릭하시면 해당 주문에 대한 상세내역을 확인하실 수 있습니다.</span>
+          <span>취소/교환/반품 신청은 배송 완료일 기준 7일까지 가능합니다.</span>
+        </p>
+      </div>
+    </li>
+    <li>
+      <input type="radio" name="mypage_order_history_tab" id="order_cancel">
+      <label for="order_cancel">취소/반품/교환 내역</label>
+      <div class="mypage_order_history_contents_ab_box">
+        <fieldset>
+          <div class="state_select">
+            <select name="order_status" id="order_status" class="fSelect">
+              <option value="all">전체 주문처리상태</option>
+              <option value="shipped_before">입금전</option>
+              <option value="shipped_standby">배송준비중</option>
+              <option value="shipped_begin">배송중</option>
+              <option value="shipped_complate">배송완료</option>
+              <option value="order_cancel">취소</option>
+              <option value="order_exchange">교환</option>
+              <option value="order_return">반품</option>
+            </select>
+          </div>
+          <span class="period">
+            <a href="#none">오늘</a><a href="#none">1주일</a><a href="#none">1개월</a><a href="#none">3개월</a><a href="#none">6개월</a>
+          </span>
+          <input type="date" id="history_start_date" value="2020-09-16">
+          <span>~</span>
+          <input type="date" id="history_end_date" value="2020-12-15">
+          <button type="button" name="button">조회</button>
+        </fieldset>
+        <p class="order_notice">
+          <span>기본적으로 최근 3개월간의 자료가 조회되며, 기간 검색시 주문처리완료 후 36개월 이내의 주문내역을 조회하실 수 있습니다.</span>
+          <span>주문번호를 클릭하시면 해당 주문에 대한 상세내역을 확인하실 수 있습니다.</span>
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+<!--div#mypage_order_history_contents2>h3+table(>caption+colgruop(>col*7)+thead(>tr>th*7))+p-->
+
+<div id="mypage_order_history_contents2">
+  <h3>주문 상품 정보</h3>
+  <table class="mypage_order_history_table">
+    <caption>주문 상품 정보</caption>
+    <colgruop>
+      <col style="width:200px;">
+      <col style="width:93px;">
+      <col style="width:auto;">
+      <col style="width:140px;">
+      <col style="width:140px;">
+      <col style="width:140px;">
+      <col style="width:140px;">
+    </colgruop>
+    <thead>
+      <tr>
+        <th scope="col">주문일자 [주문번호]</th>
+        <th scope="col"></th>
+        <th scope="col">상품정보</th>
+        <th scope="col">수량</th>
+        <th scope="col">주문금액</th>
+        <th scope="col">주문상태</th>
+        <th scope="col">취소/교환/반품</th>
+      </tr>
+    </thead>
+  </table>
+  <p>주문 내역이 없습니다.</p>
+</div>
+<!--div.page>a[href=#]*2+ol(>li>a[href=#])+a[href=#]*2-->
+
+<div class="mypage_order_history_page">
+  <a href="#none">
+    <span class="xi-angle-left-thin"></span>
+    <span class="xi-angle-left-thin"></span>
+  </a>
+  <a href="#none">
+    <span class="xi-angle-left-thin"></span>
+  </a>
+  <ol>
+    <li><a href="#none">1</a></li>
+  </ol>
+  <a href="#none">
+    <span class="xi-angle-right-thin"></span>
+  </a>
+  <a href="#none">
+    <span class="xi-angle-right-thin"></span>
+    <span class="xi-angle-right-thin"></span>
+  </a>
+</div>
+</section>
+<?php include_once('../layout/footer.html'); ?>

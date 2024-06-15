@@ -1,0 +1,332 @@
+<?php include_once('../layout/header.html'); ?>
+<section id="goods_header">
+    <div class="sub_visual">
+      <div class="sub_vis">
+        <img src="/img/sub_product_bg.png" alt="가방에서 헬멧을 꺼내는 손">
+      </div>
+      <div class="sub_txt">
+        <div class="inner">
+          <div class="line_wrap">
+              <i class="line01"></i>
+              <i class="line02"></i>
+              <i class="line03"></i>
+              <i class="line04"></i>
+          </div>
+          <strong>PRODUCT</strong>
+        </div>
+      </div>
+      <div class="sub_paging">
+        <div class="inner">
+          <div class="sub_location">
+            <div class="home"><a href="/"></a></div>
+            <div class="depth depth_1">
+              <ul>
+                <li>
+                  <button class="depth_title">PRODUCT</button>
+                  <ul id="sub_ul_goods_01" class="sub_ul" style="display: none; height: 185px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                    <li><a href="/aboutus/brandstory.html">ABOUT US</a></li>
+                    <li><a href="/product/best.html">PRODUCT</a></li>
+                    <li><a href="/event/event_ing.html">EVENT</a></li>
+                    <li><a href="/community/notice.html">COMMUNITY</a></li>
+                    <li><a href="/mypage/wish.html">MYPAGE</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="depth depth_2">
+              <ul>
+                <li>
+                  <button class="depth_title">베스트 상품</button>
+                  <ul id="sub_ul_goods_02" class="sub_ul" style="display: none; height: 185px; padding-top: 10px; margin-top: 0px; padding-bottom: 10px; margin-bottom: 0px;">
+                    <li><a href="/product/promotion.html">기획전</a></li>
+                    <li><a href="/product/best.html">베스트 상품</a></li>
+                    <li><a href="/product/foldable_helmet.html">접이식 헬멧</a></li>
+                    <li><a href="/product/safe_product.html">안전용품</a></li>
+                    <li><a href="/product/set_product.html">세트상품</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<section id="goods_caroline_section_01">
+  <section class="goods_info">
+    <div class="goods_info_head">
+      <div class="head_thumbnail">
+        <div class="thumb_img"><img src="/img/helmet_carollne.png" alt="캐롤린 헬멧"></div>
+      </div>
+      <div class="head_goodsinfo">
+        <form name="form" method="get">
+          <h3><a href="#none">캐롤린 헬멧</a></h3>
+          <span class="helmet_price">89,000</span>
+          <dl class="count_info">
+            <dt class="info_title">적립금</dt><dd class="info_con">150원(1%)</dd>
+            <dt class="info_title">배송비</dt><dd class="info_con">2,500원</dd>
+            <dt class="info_title">수령 예상일</dt><dd class="info_con">지금 주문하면 2021년 1월 5일 출고</dd>
+          </dl>
+          <dl class="review_info">
+            <dt class="info_title">평점</dt>
+            <dd class="info_con">
+              <i class="xi-star"></i>
+              <i class="xi-star"></i>
+              <i class="xi-star"></i>
+              <i class="xi-star"></i>
+              <i class="xi-star-o"></i>
+              4.9
+            </dd>
+            <dt class="info_title">주문 수</dt><dd class="info_con">231</dd>
+            <dt class="info_title">리뷰 수</dt><dd class="info_con">42</dd>
+          </dl>
+          <div class="size">
+            <span class="amount">사이즈</span>
+              <select name="size">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+              </select>
+              <span class="mysize">나의 사이즈 알아보기</span>
+              <div class="mysize_popup" style="display: block;">
+              <div>나의 사이즈 알아보기</div>
+              <span class="xi-close-thin mysize_popup_close"></span>
+              <a href="#none"><img src="/img/helmets_guide.jpg" alt="헬멧 올바르게 쓰는 법"></a>
+            </div>
+          </div>
+          <p class="order">
+            <span class="amount">상품수량</span>
+            <input type="button" id="minusBtn" value=" - " onclick="del();">
+            <input type=hidden name="sell_price" value="89000">
+            <input id="goodsCount" type="text" name="amount" value="1" size="3" onchange="change();">
+            <input type="button" id="plusBtn" value=" + " onclick="add();">
+          </p>
+          <p class="order">
+            <span>총 상품금액</span>
+            <input id="countResult" type="text" name="sum" size="11" readonly=""><span> 원</span>
+          </p>
+          <div class="button">
+            <span class="goods_wish">관심상품</span>
+            <span class="goods_cart">장바구니</span>
+            <span class="goods_order">구매하기</span>
+            <div class="goods_wish_popup">
+              <p>
+                <span>선택한 상품이</span>
+                <span>관심상품에 추가되었습니다.</span>
+              </p>
+              <p>
+                <a href="/mypage/wish.html">관심상품 확인</a>
+                <span class="on_shopping">계속 쇼핑하기</span>
+              </p>
+            </div>
+            <div class="goods_cart_popup">
+              <p>
+                <span>선택한 상품이</span>
+                <span>장바구니에 추가되었습니다.</span>
+              </p>
+              <p>
+                <a href="/mypage/cart.html">장바구니 확인</a>
+                <span class="on_shopping">계속 쇼핑하기</span>
+              </p>
+            </div>
+            <div class="goods_order_popup">
+              <p>
+                <span class="xi-close-min x_btn"></span>
+                <span class="block">회원가입 후 구매하실 경우</span>
+                <span class="block">아래의 혜택들을 받으실 수 있습니다.</span>
+              </p>
+              <ul class="list_tem">
+                <li>회원 할인가 혜택</li>
+                <li>쿠폰 및 사은품 증정</li>
+                <li>회원에게만 제공되는 포인트 적립</li>
+                <li>이벤트 참여</li>
+              </ul>
+              <p>
+                <a href="/mypage/order.html">비회원으로 구매</a>
+                <a href="/join/join.html">쉐어더로드 가입하기</a>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+<!---section#goods_caroline_section_02>form(>div.goods_explanation(>h5+p)+div.goods_img_01+div.goods_info_01(>p(>span+p)*3)+div.goods_img_02+div.good_info_02(>p+span)+div.goods_img_03+div.goods_img_04)--->
+  <section id="goods_caroline_section_02">
+    <form>
+      <div class="goods_explanation">
+        <h5>캐롤린 헬멧</h5>
+        <p>폴더블 헬멧 중 첫 번째 시리즈.<br>
+          캐롤린 헬멧은 자전거, PMV이용자들이 헬멧에게 원했던 가장 기본적인 것을 충족한 제품입니다.<br>
+      그동안 캐주얼 라이더들의 헬멧 미착용 원인은<br>
+      낮은 휴대성 / 턱끈의 불편함 / 두부 압박 및 통증이었습니다.<br>
+    캐롤린 폴더블 헬멧은 이러한 니즈를 충족하여 간편한 휴대와 우수한 착용감을 제공합니다.<br><br>
+  한층 발전 된 3D 두상 분석을 통한 최상의 아시안 핏.<br>
+  더욱 넓어진 에어홀과 헬멧 내부 주요 열점(정수리)까지 거리를 최소화 한 통풍 설계.<br>
+MIPS 기능을 넣은 측두골 보호 이중 충격 흡수 시스템.<br>
+프리미엄 안전용품 브랜드, 쉐어더로드와 함께 당신의 안전 라이프를 함께해보세요.</p>
+      </div>
+      <div class="goods_img_01"></div>
+      <div class="goods_info_01">
+        <div>
+          <a href="#none"><img src="/img/main_logo.svg" alt="쉐어더로드 로고"></a>
+          <span>제대로 된 헬멧을 생각했습니다.</span>
+          <p>라이딩 보호장구 중에서도 특히 헬멧은 생명과 직결되어 있으며, 라이딩에 집중하기 위해서는 안전에 대한 확신이 필요합니다.<br>
+          Share the road 헬멧은 제품의 안전성을 높이기 위해 과학적인 데이터와 체계적인 연구 및 실험을 토대로 개발되고 있으며,<br>
+        CE(유럽), KC(한국), 그리고 JCF(일본) 인증을 통해 안정성을 보장하고 있습니다. 또한 보다 더 안전성을 강화하기 위해<br>
+      충격완화 기술인 MIPS를 적용함으로써 어떤 상황에서도 머리를 안전하게 보호하고자 합니다.
+      <a class="certi" href="#none"><img src="/img/certi.png" alt="유럽, 한국, 일본 안전인증"></a>
+    </p>
+        </div>
+        <div>
+          <span>아시안 핏, Share_the_road.</span>
+          <p>아시아인의 두상에 잘 맞는 헬멧에 대한 연구와 더불어, 편안한 착용감, 우수한 통풍성, 간편한 휴대성을<br>
+            충족시키는 기술을 극대화 시키며, 마침내 아시아인의 두상에 가장 적합한 헬멧 '쉐어 더 로드'를 탄생시켰습니다.<br>
+          아시안 도심 라이더를 위한 헬멧, Share the road는 기능성과 안전성에 대한 신뢰와 확신을 드립니다.</p>
+        </div>
+        <div>
+          <span>도심을 가로지르는 패션 라이더.</span>
+          <p>꽉 막히는 도로의 자동차들 옆으로 유유히 여유를 즐기며 출근하는 도심의 라이더.<br>
+          Share_the_road는 도심의 패션 라이더를 컨셉으로 디자인해나가고 있습니다.<br>
+          쉐어더로드의 디자인은 라이딩의 멋을 한층 더하고 아시안 핏으로 신뢰할 수 있는<br>
+        기능성과 안정성은 라이딩의 자유로움을 한껏 맛 보도록 해드립니다.<br>
+      Share_the_road는 일상 속 여행의 서포터이자,
+      <br>도로를 자유롭게 가로지르는 흥미진진한 라이딩을 위한 믿음직한 파트너입니다.</p>
+        </div>
+      </div>
+      <div class="goods_img_02"></div>
+      <div class="good_info_02">
+        <p>Share_the_road만의 유니크한 디자인.<br>안정성과 스타일에 대한 새로운 해답,<br>
+        쉐어더로드 폴더블 헬멧.</p>
+        <span>Caroline foldable helmet</span>
+      </div>
+      <div class="goods_img_03"></div>
+      <div class="goods_info_02_01">
+        <span>폴더블 헬멧과 패브릭의 만남.</span>
+        <p>자전거 레이싱이 본격적으로 발전하기 시작하면서<br>
+
+최초로 등장한 자전거용 헬멧 '헤어네트'.<br>
+
+여러 개의 패드를 엮은 헤어네트의 형태는 그대로 가져오고<br>
+
+소재와 안정성을 최대로 높여 새롭게 완성한 것이 폴더블 헬멧입니다.<br><br>
+
+
+
+접었을 때 전체 부피보다 30% 좁아지며<br>
+사용하지 않을 땐 가죽 스트랩으로 고정해 멋스러움을 더해보세요.<br>
+
+가죽 스트랩은 바짓단이 체인에 끼는 걸 방지하기 위해,<br>
+오른쪽 바짓단을 고정하는 용도로 쓸 수도 있습니다.<br><br>
+
+
+
+헬멧에서 찾아볼 수 없던 페브릭 디테일.<br>
+
+Share the road에서 사용하는 특유의 베지터블 레더와<br>
+
+영국을 대표하는 체크 페브릭으로 클래식한 감성을 더했습니다.</p>
+      </div>
+      <div class="goods_info_03">
+        <span>Detail</span>
+        <span>상품 세부 정보</span>
+      </div>
+      <div class="goods_img_04"></div>
+      <div class="goods_info_04">
+        <p>
+          <span>[소재]</span><br>
+
+    외부 : 플라스틱 코팅<br>
+
+    내부 : 폴리스틸렌 폼 (EPS폼)</p>
+    <p>
+    <span>[사이즈]</span><br>
+
+    S/M : 55~58cm<br>
+
+    M/L : 58~61cm<br>
+
+    L/XL : 61~64cm</p>
+
+
+    <p>
+    <span>[무게]</span><br>
+
+    330g
+  </p>
+
+
+    <p>
+    <span>[안전 인증]</span><br>
+
+    국내 KC 마크<br>
+    유럽 CE 마크<br>
+    일본 JCF 마크</p>
+      </div>
+      <div class="goods_img_05"></div>
+      <div class="goods_info_05">
+        <span>밴드와 스트랩.</span>
+        <p>뒤통수 밴드는 머리를 부드럽게 감싸주고<br>
+
+옆면을 감싸는 스트랩은 사용자의 머리와 얼굴 사이즈에 맞게<br>
+
+헬멧을 튼튼히 고정해줍니다.</p>
+      </div>
+      <div class="goods_img_06"></div>
+      <div class="goods_info_06">
+        <span>위생 관리도 쉽고 편하게.</span>
+        <p>야외 활동을 하다 보면 쉽게 땀이 나기 마련입니다.<br>
+
+머리를 감싸주는 헬멧 내부의 쿠션 패브릭은<br>
+
+일명 찍찍이 방식으로 간단하게 탈부착 가능하며<br>
+
+따로 세탁할 수 있어 위생적으로 관리할 수 있습니다.</p>
+      </div>
+      <div class="goods_img_07"></div>
+      <div class="goods_info_07">
+        <span>패키지와 구성품.</span>
+        <p>헬멧, 가죽 스트랩, 사용 안내서가 함께 동봉됩니다.</p>
+      </div>
+    </form>
+  </section>
+  <section id="goods_caroline_section_03">
+    <form>
+      <ul class="img_box_wrap">
+        <li>
+          <a class="img_box" href="#none"><img src="/img/event_preview_4.png" alt="리뷰 이벤트"></a>
+          <a class="event_bn" href="/event/event_ing_3.html">자세히보기</a>
+        </li>
+        <li>
+          <a class="img_box" href=#none"><img src="/img/event_preview_1.png" alt="리뷰 이벤트"></a>
+          <a class="event_bn" href="/event/event_ing_4.html">자세히보기</a>
+        </li>
+        <li>
+          <a class="img_box" href="#none"><img src="/img/event_preview_5.png" alt="리뷰 이벤트"></a>
+          <a class="event_bn" href="/event/event_ing_1.html">자세히보기</a>
+        </li>
+      </ul>
+      <h6>리뷰</h6>
+      <ul class="goods_review_wrap">
+            <li>
+              <span>go_hass*** 님</span>
+              <a href="#none"><img src="/img/goods_review_01.png" alt="다른 후기"></a>
+              <a href="#none">역시 블랙은 진리. 진짜 신기한게 추리닝을
+                입어도 정장을 입어도 어울려요. 이런 헬멧 또 어디 있나요? 진짜 아무렇게나 부담 없이 걸칠 수 있어서 좋아요. 여유있는데 뭐 살지 고민이라면 이 헬멧 닥추천.</a>
+            </li>
+            <li>
+              <span>smail_m*** 님</span>
+              <a href="#none"><img src="/img/goods_review_02.png" alt="다른 후기"></a>
+              <a href="#none">검정 성애자라 샀어요. 역시 실망시키지 않네요 고급스러운 블랙이에요. 무광이라 싼티나지도 않고요. 하긴 이가격대에 싼티나게 만들지 않았겠죠ㅋㅋㅋㅋ무튼 잘 애용 중입니다. 적립금 주세여~</a>
+            </li>
+            <li>
+              <span>pear*** 님</span>
+              <a href="#none"><img src="/img/goods_review_03.png" alt="다른 후기"></a>
+              <a href="#none">이 헬멧 하나만 있으면 됩니다. 저는 이것만 계속 구매할래요. 안에 패드도 갈아줄 수 있어서 꽤 오래 쓸 듯한 느낌입니다. 마감도 좋고 내구성이 좋아요. 튼튼함에 별 1000개 줍니다!</a>
+            </li>
+          </ul>
+          <div class="other_review_button_wrap"><a href="/community/review.html" class="other_review_button">더 많은 리뷰 보러가기</a></div>
+    </form>
+  </section>
+</section>
+<?php include_once('../layout/footer.html'); ?>
