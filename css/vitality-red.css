@@ -58,7 +58,7 @@ section {
     bottom: 0;
 }
 header #intro_content_id{
-  top: min(50%, 500px);
+  top: min(40%, 500px);
   left: unset !important;
   right: 0;
   font-family: 'IBMPlexSansKR-Regular';
@@ -90,7 +90,7 @@ header #intro_content_id{
     line-height: 1.5;
 }
 header .intro-content .brand-name{
-  font-size: min(4.5rem, 55px);
+  font-size: min(4.3rem, 55px);
   line-height: 1.5;
   text-align: right;
   margin-left: 2vw;
@@ -397,7 +397,7 @@ hr.colored {
 }
 .navbar-default .navbar-toggle,
 .navbar-inverse .navbar-toggle {
-  color: white;
+  color: #ff4b4b;
   font-size: 14px;
   padding: 6px 10px;
 }
@@ -405,7 +405,7 @@ hr.colored {
 .navbar-inverse .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: white;
+  background-color: #ff4b4b;
   color: #222;
 }
 .navbar-default .navbar-brand,
@@ -467,6 +467,15 @@ hr.colored {
   .navbar-inverse.navbar-expanded {
     background: transparent;
     border: none;
+  }
+  .navbar-expanded img{
+    filter: drop-shadow(5px 5px 10px #000);
+  }
+  .navbar-expanded .navbar-nav > li > a{
+    color:#fff;
+  }
+  .navbar-expanded .navbar-nav > .active > a, .navbar-expanded .navbar-nav > .active > a:hover, .navbar-expanded .navbar-nav > .active > a:focus{
+    color:#fff;
   }
 }
 .navbar a:focus {
