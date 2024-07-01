@@ -44,8 +44,8 @@ section {
 }
 #header {
   width: 100%;
-      position: relative;
-      background-size: 120%;
+  position: relative;
+  background-size: cover;
 }
 #header:before {
     content: '';
@@ -58,11 +58,13 @@ section {
     bottom: 0;
 }
 header #intro_content_id{
-  top: 57%;
-      left: 67%;
-      font-family: 'IBMPlexSansKR-Regular';
-      padding: 0px 50px 30px 28px;
-      width: 746px;
+  top: min(50%, 500px);
+  left: unset !important;
+  right: 0;
+  font-family: 'IBMPlexSansKR-Regular';
+  padding-right:5vw;
+  width: min(100%, 764px);
+  transform: unset;
 }
 .about-content p {
     line-height: 2;
@@ -88,28 +90,22 @@ header #intro_content_id{
     line-height: 1.5;
 }
 header .intro-content .brand-name{
-  font-size: 55px;
-      line-height: 100px;
-      text-align: right;
-      /* font-family: 'IBMPlexSansKR-Regular'; */
-      width: 620px;
-      margin-left: 20px;
-      color: #fff;
-      font-family: 'HAN-YONG-UN';
-  }
-header .intro-content .brand-name-subtext {
-  font-size: 23px;
-  line-height: 47px;
+  font-size: min(4.5rem, 55px);
+  line-height: 1.5;
   text-align: right;
-  margin-right: 40px;
+  margin-left: 2vw;
   color: #fff;
+  font-family: 'HAN-YONG-UN';
+}
+header .intro-content .brand-name-subtext {
+  font-size: min(2.5rem, 25px);
+  line-height: 1.5;
+  text-align: right;
   }
 header .intro-content .brand-name-subtext + .brand-name-subtext {
   font-weight: 300;
-  margin-top: 25px;
-  font-size: 18px;
-  line-height: 35px;
-  margin-right: 40px;
+  font-size: min(2rem, 20px);
+  line-height: 1.5;
   color: #f1f1f1;
   }
 
@@ -582,30 +578,7 @@ header .scroll-down .btn:hover {
     max-height: 250px;
   }
 }
-@media (min-width: 1025px) {
 
-  #header {
-    background-attachment: fixed;
-    background-size: 141%;
-  }
-  header #intro_content_id {
-    left: 67%;
-    top: 51%;
-}
-header .intro-content .brand-name {
-    color: #fff;
-}
-
-}
-@media (min-width: 1680px) {
-  #header #intro_content_id {
-    left: 67%;
-    top: 57%;
-  }
-  header .intro-content .brand-name {
-    color: #fff;
-}
-}
 header.video .overlay {
   position: absolute;
   height: 100%;
